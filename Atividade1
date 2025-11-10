@@ -1,0 +1,15 @@
+class maioroumenor():
+    def init(self, nome, idade_texto,):
+        self.nome = nome
+        self.idade_texto = idade_texto
+
+    nome = input("Qual é seu nome? ")
+    idade_texto = input("Qual a sua idade? ")
+
+    idade_numero = int(idade_texto)
+
+    if idade_numero >= 18:
+        print(f"Olá, {nome}, você é maior de idade!!")
+
+    else:
+        print(f"Olá, {nome}, você é menor de idade!!")
