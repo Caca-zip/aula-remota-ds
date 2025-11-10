@@ -1,0 +1,7 @@
+num = input("Digite o número que você quer multiplicar: ")
+num_int = int(num)
+
+print(f"--- Tabuada do {num} ---")
+
+for i in range(1,11):
+    print(f"{num_int} * {i} = {num_int*i}")'
