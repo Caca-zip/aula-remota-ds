@@ -1,0 +1,23 @@
+class Veiculo:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+    def exibir_informacoes(self):
+        print(f"Marca: {self.marca}")
+        print(f"Modelo: {self.modelo}")
+
+
+class Carro(Veiculo):
+    def __init__(self, marca, modelo, numero_portas):
+        # Usa o construtor da classe pai
+        super().__init__(marca, modelo)
+        self.numero_portas = numero_portas
+
+    def exibir_informacoes(self):
+        super().exibir_informacoes()
+        print(f"Número de portas: {self.numero_portas}")
+
+
+meu_carro = Carro("Toyota", "Corolla", 4)
+meu_carro.exibir_informacoes()
